@@ -340,7 +340,7 @@ section > p {
 }
 .row {
   display: flex;
-  max-width: 980px;
+  
   left: 0;
   right: 0;
   margin: 0 auto;
