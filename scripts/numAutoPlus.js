@@ -38,7 +38,7 @@
   window.addEventListener('scroll', () => {
     let { top, bottom } = dataEl.getBoundingClientRect()
     //判断是否在可见区域
-    if (bottom > 0 && top < window.innerHeight) {
+    if (bottom > 0 && top < window.innerHeight - 100) {
       numAutoPlus('.num', {
         time: 1000,
         rate: 40,
