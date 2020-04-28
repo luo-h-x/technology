@@ -22,19 +22,11 @@
 
   //鼠标移入时transform的距离
   let transformImges1 = [
-    [
-      -2 * stepX + px,
-      -2 * stepY - stepY + px,
-      '0px',
-    ],
+    [-2 * stepX + px, -2 * stepY - stepY + px, '0px'],
     [-stepX + px, -stepY - stepY + px, '0px'],
     ['0px', -stepY + px, '0px'],
     [stepX + px, stepY - stepY + px, '0px'],
-    [
-      2 * stepX + px,
-      2 * stepY - stepY + px,
-      '0px',
-    ],
+    [2 * stepX + px, 2 * stepY - stepY + px, '0px'],
   ]
 
   let arrImgs = [...projectImages.children]
@@ -50,10 +42,15 @@
     })
   })
 
+  arrImgs.map((v, i) => {
+    projectImages.children[i].style =
+      'transform: translate3d(' + transformImges[i] + ')'
+  })
+
   window.addEventListener('scroll', () => {
     let { top, bottom } = projectImages.getBoundingClientRect()
     //判断是否在可见区域
-    if (bottom > 0 && top < window.innerHeight - 100) {
+    if (bottom > 0 && top < window.innerHeight - 50) {
       arrImgs.map((v, i) => {
         projectImages.children[i].style =
           'transform: translate3d(' + transformImges[i] + ')'
