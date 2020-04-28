@@ -143,6 +143,7 @@ footer {
 /* ------------------------------------------main----- */
 .glide {
   position: relative;
+  height: 100%;
   width: 100%;
   box-sizing: border-box;
   background: #000;
@@ -161,8 +162,8 @@ footer {
 }
 
 .glide__slides img {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   opacity: 0.7;
 }
@@ -269,6 +270,7 @@ footer {
 section {
   display: grid;
   justify-items: center;
+  max-width: 100%;
 }
 #about {
   padding: 70px 80px 32px;
@@ -336,14 +338,10 @@ section > p {
 }
 /* 合作案例 */
 .row {
-  max-width: 100vw;
-}
-.row {
   display: flex;
-  
   left: 0;
   right: 0;
-  margin: 0 auto;
+
 }
 .image-wrapper {
   position: relative;
@@ -388,7 +386,6 @@ section > p {
 }
 /* data */
 .data {
-  max-width: unset;
   width: 100vw;
   height: 256px;
   background-image: url(https://puui.qpic.cn/fans_admin/0/3_15881579_1584935789245/0);
@@ -401,6 +398,7 @@ section > p {
   align-items: center;
   position: relative;
   z-index: 10;
+  opacity: 1;
 }
 .data-piece {
   display: flex;
