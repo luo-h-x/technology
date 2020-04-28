@@ -1,0 +1,36 @@
+/* data */
+.data {
+  width: 100vw;
+  height: 256px;
+  background-image: url(https://puui.qpic.cn/fans_admin/0/3_15881579_1584935789245/0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+}
+.data-piece {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  z-index: 30;
+}
+.data-piece .fas {
+  font-size: 47px;
+}
+.data-piece .num {
+  margin-top: 20px;
+  font-size: 37px;
+}
+.data-piece .data-desc {
+  font-size: 18px;
+  font-weight: 500;
+}
