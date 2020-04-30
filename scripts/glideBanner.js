@@ -1,19 +1,32 @@
 !function () {
-
-  let leftArrow = document.querySelector('.glide__arrow--left') 
-  let rightArrow = document.querySelector('.glide__arrow--right') 
+  let leftArrow = document.querySelector('.glide__arrow--left')
+  let rightArrow = document.querySelector('.glide__arrow--right')
   let slidesEl = document.querySelector('.glide__slides')
-  // let slideW = window.innerWidth
 
+  let index = 0
 
-  leftArrow.addEventListener( 'click', () => {
-    // slidesEl[0].style = 'transform: translate3d('+ -slideW +'px, 0px, 0px); margin-left: 18px;'
-    slidesEl.classList.remove('glide__slide-active')
+  leftArrow.addEventListener('click', () => {
+    if (index === 1) {
+      slidesEl.classList.remove('glide__slide-active')
+      slidesEl.classList.add('glide__slide-active1')
+      index = 0
+    }else {
+      slidesEl.classList.remove('glide__slide-active1')
+      slidesEl.classList.add('glide__slide-active')
+      index = 1
+    }
+
   })
 
-  rightArrow.addEventListener( 'click', () => {
-    // slidesEl[0].style = 'transform: translate3d(0px, 0px, 0px)'
-    slidesEl.classList.add('glide__slide-active')
+  rightArrow.addEventListener('click', () => {
+    if (index === 0) {
+      slidesEl.classList.remove('glide__slide-active1')
+      slidesEl.classList.add('glide__slide-active')
+      index = 1
+    }else {
+      slidesEl.classList.remove('glide__slide-active')
+      slidesEl.classList.add('glide__slide-active1')
+      index = 0
+    }
   })
-
 }.call()
