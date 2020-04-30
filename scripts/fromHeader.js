@@ -9,7 +9,6 @@
   let sections = document.querySelectorAll('section')
   let homeEl = document.getElementById('home')
   let scrollArr = [homeEl, ...sections]
-  console.log(activeEl);
   
 
   let status = false
