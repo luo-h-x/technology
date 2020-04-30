@@ -1,7 +1,8 @@
 /* data */
 .data {
-  width: 100vw;
+  width: 100%;
   height: 256px;
+  margin-top: 100px;
   background-image: url(https://puui.qpic.cn/fans_admin/0/3_15881579_1584935789245/0);
   background-size: cover;
   background-repeat: no-repeat;

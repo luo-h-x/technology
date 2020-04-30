@@ -3,9 +3,13 @@
   margin: 0;
 }
 
-
-
-/* -------------------------------------------------footer---- */
+img {
+  max-width: 100%;
+}
+body {
+  height: 100%;
+}
+/* footer */
 footer {
   margin-top: 124px;
   background-color: #142740;
@@ -79,9 +83,8 @@ footer {
   font-size: 14px;
 }
 
-/* ------------------------------------------main----- */
+/* main */
 
-/* section */
 .contentWrap {
   display: flex;
   justify-content: center;
@@ -93,9 +96,7 @@ section {
   justify-items: center;
   max-width: 100%;
 }
-#about {
-  padding: 70px 80px 32px;
-}
+
 section h2 {
   color: black;
   font-size: 34px;
@@ -114,55 +115,15 @@ section > p {
   font-size: 18px;
   color: #727272;
 }
-/* 关于我们 */
-.features {
-  display: grid;
-  grid-template-rows: 126px 126px;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 5vw;
-  row-gap: 2vwk;
-}
-.feature {
-  display: grid;
-  grid-template-rows: 1fr 3fr;
-  grid-template-columns: 60px 1fr;
-  grid-template-areas:
-    'icon title'
-    'icon content';
-}
-.feature .fas {
-  grid-area: icon;
-  font-size: 32px;
-  color: var(--primary-color);
-}
-.fa-lightbulb:before {
-  content: '\f0eb';
-}
-.fa-chart-line:before {
-  content: '\f201';
-}
-.fa-shopping-cart:before {
-  content: '\f07a';
-}
-.fa-desktop:before {
-  content: '\f108';
-}
-.fa-tachometer-alt:before {
-  content: '\f3fd';
-}
-.fa-server:before {
-  content: '\f233';
-}
-.feature-content {
-  color: #727272;
-  margin-top: 7px;
-}
+
 /* 合作案例 */
+#showcase {
+  margin: 50px;
+}
 .row {
   display: flex;
   left: 0;
   right: 0;
-
 }
 .image-wrapper {
   position: relative;
@@ -180,6 +141,7 @@ section > p {
   left: 0;
   transition: all 0.5s ease-in-out;
 }
+
 .row > .col.vertical-center {
   display: flex;
   align-items: center;
@@ -205,4 +167,66 @@ section > p {
   color: #3475c6;
   text-decoration: none;
 }
+
+/* team */
+.team {
+  padding: 100px;
+}
+.team-members {
+  margin-top: 76px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 24px;
+}
+.team-member {
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 0 17px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s;
+}
+.profile-image {
+  width: 100%;
+  overflow: hidden;
+}
+.profile-image img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: top center;
+}
+.team-member:hover {
+  transform:translate3d(0, -40px, -80px);
+  box-shadow: 10px 0 47px rgba(0, 0, 0, 0.2);
+}
+.team-member .name {
+  margin-top: 18px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #494949;
+}
+.team-member .position {
+  font-size: 14px;
+  margin-top: 5px;
+  color: var(--text-color-dark-gray);
+}
+.team-member .social-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 10px 50px ;
+}
+
+.social-links li {
+  list-style: none;
+}
+.social-links li a {
+  color: #494949;
+  text-decoration: none;
+  font-size: 20px;
+}
+
 

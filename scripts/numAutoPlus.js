@@ -7,7 +7,6 @@
     // 转化为数组
     let arr = [...that]
     arr.map((v, i) => {
-      if (v.innerText > 0) return
       // 动画时长(毫秒数)
       // 也可以将需要的参数写在dom上如：[data-XXX]
       let time = options.time
@@ -33,17 +32,20 @@
     })
   }
 
+  let status = true
+
   let dataEl = document.querySelector('.data')
 
-  window.addEventListener('scroll', () => {
-    let { top, bottom } = dataEl.getBoundingClientRect()
-    //判断是否在可见区域
-    if (bottom > 0 && top < window.innerHeight - 100) {
-      numAutoPlus('.num', {
-        time: 1000,
-        rate: 40,
-        num: [7979, 283, 1558, 189],
-      })
-    }
-  })
+    window.addEventListener('scroll', () => {
+      let { top, bottom } = dataEl.getBoundingClientRect()
+      //判断是否在可见区域
+      if (bottom > 0 && top < window.innerHeight - 100 && status ) {
+        status = false
+        numAutoPlus('.num', {
+          time: 1000,
+          rate: 40,
+          num: [7979, 283, 1558, 189],
+        })
+      }
+    })
 }.call()

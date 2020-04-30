@@ -5,103 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>科技</title>
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/glide.css">
-    <link rel="stylesheet" href="./css/data.css">
-
+    <link rel="stylesheet" href="./fonts/iconfont.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/glide.css" />
+    <link rel="stylesheet" href="./css/data.css" />
+    <link rel="stylesheet" href="./css/about.css" />
   </head>
 
   <body>
     <header>
       <div class="logo">创新科技</div>
       <nav class="nav">
-        <a href="#home" class="active">首页</a>
-        <a href="#about" class="">关于我们</a>
-        <a href="#showcase" class="">合作案例</a>
-        <a href="#service" class="">服务细节</a>
-        <a href="#team" class="">团队成员</a>
+        <a class="active">首页</a>
+        <a class="">关于我们</a>
+        <a class="">合作案例</a>
+        <a class="">团队成员</a>
+        <a>data数据</a>
         <a href="https://github.com/luo-h-x/technology" class="">GitHub</a>
       </nav>
     </header>
-    <main>
+    <main >
       <div id="home" class="glide">
         <div class="glide__slides">
-          <div class="slide-caption">
-            <h1 >
-              创新人生，科技未来
-            </h1>
-            <h3 >
-              用科技和创新拥抱未来
-            </h3>
-            <button class="btn" >
-              探索更多
-            </button>
+          <div class="glide__slide">
+            <div class="slide-caption">
+              <h1>创新人生，科技未来</h1>
+              <h3>用科技和创新拥抱未来</h3>
+              <button class="btn">探索更多</button>
+            </div>
+            <div class="banner"></div>
+
+            <img src="./imgs/0.jpg" alt="" />
           </div>
-          <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-              &lt;
-            </button>
-            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-              &gt;
-            </button>
+          <div class="glide__slide">
+            <div class="slide-caption left">
+              <h1>相信技术的力量</h1>
+              <h3>数据平台下的商务时代</h3>
+              <button class="btn">探索更多</button>
+            </div>
+            <div class="banner"></div>
+            <img src="./imgs/0.jpg" alt="" />
           </div>
-          <div class="glide__bullets" data-glide-el="controls[nav">
-            <button class="glide__bullet" data-glide-dir="0"></button>
-            <button class="glide__bullet" data-glide-dir="1"></button>
-          </div>
-          <img src="./imgs/0.jpg" alt="" />
+        </div>
+        <div class="glide__arrows">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            &lt;
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            &gt;
+          </button>
+        </div>
+        <div class="glide__bullets">
+          <button class="glide__bullet"></button>
+          <button class="glide__bullet"></button>
         </div>
       </div>
-      <div class="contentWrap">
-        <section
-          id="about"
-          class="about"
-          data-d=""
-          tabindex="-1"
-          style="outline: none;"
-        >
+      <div class="contentWrap" id="contentWrap">
+        <section id="about" class="about" style="outline: none;">
           <h2 class="title1">关于我们</h2>
           <p class="intro">
             提供你需要的一切企业网络科技
           </p>
           <div class="features">
-            <div class="feature">
-              <i class="fas fa-lightbulb"></i>
+            <div class="feature" style="visibility: hidden;">
+              <i class="iconfont icon-chuangyi"></i>
               <h4 class="feature-title">品牌创意</h4>
               <p class="feature-content">
                 为企业设计独具风格的展现企业价值观的视觉效果
               </p>
             </div>
-            <div class="feature">
-              <i class="fas fa-chart-line"></i>
+            <div class="feature" style="visibility: hidden;">
+              <i class="iconfont icon-yingxiao"></i>
               <h4 class="feature-title">整合营销</h4>
               <p class="feature-content">
                 通过市场进入分析、制定网络营销战略、网络营销实施
               </p>
             </div>
-            <div class="feature">
-              <i class="fas fa-shopping-cart"></i>
+            <div class="feature" style="visibility: hidden;">
+              <i class="iconfont icon-dianzishangwu"></i>
               <h4 class="feature-title">电子商务</h4>
               <p class="feature-content">
                 根据企业需求，开设不同的销售渠道，通过网上直销
               </p>
             </div>
-            <div class="feature">
-              <i class="fas fa-desktop"></i>
+            <div class="feature" style="visibility: hidden;">
+              <i class="iconfont icon-wangyesheji"></i>
               <h4 class="feature-title">网页设计</h4>
               <p class="feature-content">
                 通过网站建设、智能建站、域名主机、企业邮箱
               </p>
             </div>
-            <div class="feature">
-              <i class="fas fa-tachometer-alt"></i>
+            <div class="feature" style="visibility: hidden;">
+              <i class="iconfont icon-youhuayunhang"></i>
               <h4 class="feature-title">网站优化</h4>
               <p class="feature-content">
                 网站推广是指将网站推广到国内各大知名网站和搜索引擎
               </p>
             </div>
-            <div class="feature">
-              <i class="fas fa-server"></i>
+            <div class="feature" style="visibility: hidden;">
+              <i class="iconfont icon-shuju"></i>
               <h4 class="feature-title">数据平台</h4>
               <p class="feature-content">
                 依托数据建立企业自身数据平台
@@ -142,24 +144,113 @@
             </div>
           </div>
         </section>
-        <section class="data">
+        <section id="team" class="team section-bg" data-d="">
+          <h2 class="title1">团队成员</h2>
+          <div class="team-members">
+            <div class="team-member">
+              <div class="profile-image">
+                <img
+                  src="https://pic.downk.cc/item/5e7836f55c560911295d96d6.jpg"
+                  alt=""
+                />
+              </div>
+              <h4 class="name">Tom</h4>
+              <p class="position">前端工程师</p>
+              <ul class="social-links">
+                <li>
+                  <a href="#"><i class="iconfont icon-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="iconfont icon-weibo"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="iconfont icon-github"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="team-member">
+              <div class="profile-image">
+                <img
+                  src="https://pic.downk.cc/item/5e7836f65c560911295d96dc.jpg"
+                  alt=""
+                />
+              </div>
+              <h4 class="name">Mary</h4>
+              <p class="position">UI设计师</p>
+              <ul class="social-links">
+                <li>
+                  <a href="#"><i class="iconfont icon-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="iconfont icon-weibo"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="iconfont icon-github"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="team-member">
+              <div class="profile-image">
+                <img
+                  src="https://pic.downk.cc/item/5e7836f65c560911295d96e6.jpg"
+                  alt=""
+                />
+              </div>
+              <h4 class="name">Jerry</h4>
+              <p class="position">后端工程师</p>
+              <ul class="social-links">
+                <li>
+                  <a href="#"><i class="iconfont icon-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="iconfont icon-weibo"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="iconfont icon-github"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="team-member">
+              <div class="profile-image">
+                <img
+                  src="https://pic.downk.cc/item/5e7836f65c560911295d96f1.jpg"
+                  alt=""
+                />
+              </div>
+              <h4 class="name">Lisa</h4>
+              <p class="position">市场专员</p>
+              <ul class="social-links">
+                <li>
+                  <a href="#"><i class="iconfont icon-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="iconfont icon-weibo"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="iconfont icon-github"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="data" id="data">
           <div class="data-piece">
-            <i class="fas fa-code"></i>
+            <i class="icon fa-code"></i>
             <div class="num">0</div>
             <div class="data-desc">行代码</div>
           </div>
           <div class="data-piece">
-            <i class="fas fa-award"></i>
+            <i class="icon fa-award"></i>
             <div class="num">0</div>
             <div class="data-desc">个奖项</div>
           </div>
           <div class="data-piece">
-            <i class="fas fa-laugh-wink"></i>
+            <i class="icon fa-laugh-wink"></i>
             <div class="num">0</div>
             <div class="data-desc">位客户</div>
           </div>
           <div class="data-piece">
-            <i class="fas fa-folder"></i>
+            <i class="icon fa-folder"></i>
             <div class="num">0</div>
             <div class="data-desc">个项目</div>
           </div>
@@ -215,18 +306,25 @@
           © 2020 创新科技 - All Right Reseved
         </p>
         <div class="scrollToTop" style="display: none;">
-          <a href="#home"><i class="fas fa-chevron-up"></i></a>
+          <a href="#home"><i class="icon fa-chevron-up"></i></a>
         </div>
       </div>
       <div class="scrollToTop">
         <a href="#home">
-          <!-- <i class="fas fa-chevron-up"></i> -->
+          <!-- <i class="icon fa-chevron-up"></i> -->
           顶部
         </a>
       </div>
     </footer>
     <script src="./scripts/numAutoPlus.js"></script>
     <script src="./scripts/projectImages.js"></script>
-    <script src="./scripts/header.js"></script>
+    <script src="./scripts/fromHeader.js"></script>
+    <script src="./scripts/slowlyAbout.js"></script>
+    <script src="./scripts/glideBanner.js"></script>
+    <script>
+      var ss = document.styleSheets;
+      console.log(ss);
+      
+    </script>
   </body>
 </html>

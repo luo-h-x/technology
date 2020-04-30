@@ -1,0 +1,46 @@
+/* 关于我们 */
+#about {
+  padding: 100px;
+}
+.features {
+  display: grid;
+  grid-template-rows: 126px 126px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5vw;
+  row-gap: 2vwk;
+}
+.feature {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  grid-template-columns: 60px 1fr;
+  grid-template-areas:
+    'icon title'
+    'icon content';
+  
+}
+.feature .iconfont {
+  grid-area: icon;
+  font-size: 32px;
+  color: #61baf1 ;
+}
+
+.feature-content {
+  color: #727272;
+  margin-top: 7px;
+}
+
+.move-in {
+ animation: grow 1s linear forwards;
+}
+
+@keyframes grow {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

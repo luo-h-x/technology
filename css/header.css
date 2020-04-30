@@ -19,6 +19,7 @@ header {
 .nav {
   justify-self: center;
   display: block;
+  cursor:pointer
 }
 
 header .nav a {
