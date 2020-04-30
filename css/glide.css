@@ -19,6 +19,9 @@
 .glide__slide-active {
   animation: glide 1s ease-in forwards;
 }
+.glide__slide-active1 {
+  animation: glide1 1s ease-in forwards;
+}
 
 @keyframes glide {
   0% {
@@ -27,6 +30,16 @@
 
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes glide1 {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX();
   }
 }
 
