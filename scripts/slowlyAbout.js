@@ -6,7 +6,7 @@
     let { bottom } = features.getBoundingClientRect()
 
     if (bottom <= window.innerHeight && status) {
-      status =false
+      status = false
       featuresEL.forEach((v, i) => {
         setTimeout(() => {
           v.style = ''
