@@ -1,6 +1,6 @@
 !function () {
   let projectImages = document.querySelector('#project-images')
-  
+
   //获取页面宽高
   let wspace = document.body.scrollWidth
   let hspace = document.body.scrollHeight
@@ -43,18 +43,30 @@
   })
 
   arrImgs.map((v, i) => {
-    projectImages.children[i].style.setProperty('transform', 'translate3d(' + transformImges[i] + ')')
+    projectImages.children[i].style.setProperty(
+      'transform',
+      'translate3d(' + transformImges[i] + ')'
+    )
   })
 
   window.addEventListener('scroll', () => {
     let { top, bottom } = projectImages.getBoundingClientRect()
     //判断是否在可见区域
-    if (bottom > 0 && top < window.innerHeight - projectImages.clientHeight/2 ) {
+    if (
+      bottom > 0 &&
+      top < window.innerHeight - projectImages.clientHeight / 2
+    ) {
       arrImgs.map((v, i) => {
-        projectImages.children[i].style.setProperty('transform', 'translate3d(' + transformImges[i] + ')')
+        projectImages.children[i].style.setProperty(
+          'transform',
+          'translate3d(' + transformImges[i] + ')'
+        )
       })
     }
-    if (top > window.innerHeight - projectImages.clientHeight/2 || bottom < 50) {
+    if (
+      top > window.innerHeight - projectImages.clientHeight / 2 ||
+      bottom < 50
+    ) {
       arrImgs.map((v, i) => {
         projectImages.children[i].style = ''
       })
