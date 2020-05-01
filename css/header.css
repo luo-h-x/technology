@@ -14,6 +14,7 @@ header {
   font-weight: 600;
   color: #e7e9ec;
   justify-self: center;
+  cursor: pointer;
 }
 
 .nav {
@@ -72,6 +73,7 @@ header.sticky .logo, header.sticky nav a, header.sticky nav i {
 }
 
 @keyframes highLine {
+  
   0% {
     width: 0%;
   }
