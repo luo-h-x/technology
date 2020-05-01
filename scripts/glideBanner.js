@@ -10,12 +10,11 @@
       slidesEl.classList.remove('glide__slide-active')
       slidesEl.classList.add('glide__slide-active1')
       index = 0
-    }else {
+    } else {
       slidesEl.classList.remove('glide__slide-active1')
       slidesEl.classList.add('glide__slide-active')
       index = 1
     }
-
   })
 
   rightArrow.addEventListener('click', () => {
@@ -23,7 +22,7 @@
       slidesEl.classList.remove('glide__slide-active1')
       slidesEl.classList.add('glide__slide-active')
       index = 1
-    }else {
+    } else {
       slidesEl.classList.remove('glide__slide-active')
       slidesEl.classList.add('glide__slide-active1')
       index = 0
