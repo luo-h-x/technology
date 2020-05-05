@@ -41,24 +41,28 @@
       status = true
     }
     if (aboutTop <= 72 && hold) {
+      e.stopPropagation()
       activeEl.map((v1) => {
         v1.classList.remove('active')
       })
       activeEl[1].classList.add('active')
     }
     if (showcaseTop <= 72 && hold) {
+      e.stopPropagation()
       activeEl.map((v1) => {
         v1.classList.remove('active')
       })
       activeEl[2].classList.add('active')
     }
     if (teamTop <= 72 && hold) {
+      e.stopPropagation()
       activeEl.map((v1) => {
         v1.classList.remove('active')
       })
       activeEl[3].classList.add('active')
     }
     if (dataTop <= 72 && hold) {
+      e.stopPropagation()
       activeEl.map((v1) => {
         v1.classList.remove('active')
       })
