@@ -37,7 +37,6 @@
   let dataEl = document.querySelector('.data')
   let dataPiece = document.getElementsByClassName('data-piece')
   let arr = [...dataPiece]
-  console.log(dataPiece, arr)
 
   window.addEventListener('scroll', () => {
     let { top, bottom } = dataEl.getBoundingClientRect()
