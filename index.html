@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>科技</title>
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/glide.css" />
     <link rel="stylesheet" href="./fonts/iconfont.css" />
     <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/glide.css" />
     <link rel="stylesheet" href="./css/data.css" />
     <link rel="stylesheet" href="./css/about.css" />
   </head>
@@ -44,7 +44,7 @@
               <button class="btn">探索更多</button>
             </div>
             <div class="banner"></div>
-            <img src="https://www.tencent.com/data/index/index_develop_bg3.jpg" alt="" />
+            <img src='https://www.tencent.com/data/index/index_develop_bg3.jpg'  alt="" />
           </div>
         </div>
         <div class="glide__arrows">
@@ -150,7 +150,7 @@
             <div class="team-member">
               <div class="profile-image">
                 <img
-                  src="https://pic.downk.cc/item/5e7836f55c560911295d96d6.jpg"
+                  id="img2" 
                   alt=""
                 />
               </div>
@@ -171,7 +171,7 @@
             <div class="team-member">
               <div class="profile-image">
                 <img
-                  src="https://pic.downk.cc/item/5e7836f65c560911295d96dc.jpg"
+                  id="img3" 
                   alt=""
                 />
               </div>
@@ -192,7 +192,7 @@
             <div class="team-member">
               <div class="profile-image">
                 <img
-                  src="https://pic.downk.cc/item/5e7836f65c560911295d96e6.jpg"
+                  id="img4" 
                   alt=""
                 />
               </div>
@@ -213,7 +213,7 @@
             <div class="team-member">
               <div class="profile-image">
                 <img
-                  src="https://pic.downk.cc/item/5e7836f65c560911295d96f1.jpg"
+                  id="img5" 
                   alt=""
                 />
               </div>
@@ -314,12 +314,25 @@
       </div>
       
     </footer>
+    <script>
+      window.onload = function () {
+        let img2 = document.getElementById('img2')
+        let img3 = document.getElementById('img3')
+        let img4 = document.getElementById('img4')
+        let img5 = document.getElementById('img5')
+        let img6 = document.getElementById('img2')
+        img2.src = 'https://pic.downk.cc/item/5e7836f55c560911295d96d6.jpg'
+        img3.src = "https://pic.downk.cc/item/5e7836f65c560911295d96dc.jpg"
+        img4.src = 'https://pic.downk.cc/item/5e7836f65c560911295d96e6.jpg'
+        img5.src = 'https://pic.downk.cc/item/5e7836f65c560911295d96f1.jpg'
+      }
+    </script>
     <script src="./scripts/dataShares.js"></script>
     <script src="./scripts/projectImages.js"></script>
     <script src="./scripts/fromHeader.js"></script>
     <script src="./scripts/slowlyAbout.js"></script>
     <script src="./scripts/glideBanner.js"></script>
     <script src="./scripts/scrollTop.js"></script>
-
+    
   </body>
 </html>
