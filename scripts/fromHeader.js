@@ -11,20 +11,10 @@
   let scrollArr = [homeEl, ...sections];
 
   let status = false;
-  let hold = true;
 
   activeEl.map((v, i) => {
-    v.addEventListener("click", (e) => {
-      hold = false;
-      activeEl.map((v1) => {
-        v1.classList.remove("active");
-      });
+    v.addEventListener("click", () => {
       scrollArr[i].scrollIntoView({ behavior: "smooth", block: "start" });
-
-      v.classList.add("active");
-      setTimeout(() => {
-        hold = true;
-      }, 1000);
     });
   });
 
@@ -42,25 +32,27 @@
       headerEl.classList.add("sticky");
       status = true;
     }
-    if (aboutTop <= 72 && hold) {
+    if (aboutTop <= 72 && !activeEl[1].classList.value ) {
+      console.log(!activeEl[1].classList.value);
+      
       activeEl.map((v1) => {
         v1.classList.remove("active");
       });
       activeEl[1].classList.add("active");
     }
-    if (showcaseTop <= 72 && hold) {
+    if (showcaseTop <= 72 && !activeEl[2].classList.value ) {
       activeEl.map((v1) => {
         v1.classList.remove("active");
       });
       activeEl[2].classList.add("active");
     }
-    if (teamTop <= 72 && hold) {
+    if (teamTop <= 72 && !activeEl[3].classList.value ) {
       activeEl.map((v1) => {
         v1.classList.remove("active");
       });
       activeEl[3].classList.add("active");
     }
-    if (dataTop <= 72 && hold) {
+    if (dataTop <= 72 && !activeEl[4].classList.value ) {
       activeEl.map((v1) => {
         v1.classList.remove("active");
       });
